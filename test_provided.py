@@ -92,7 +92,7 @@ class TestTextClassifyBaselineMiniTrain(unittest.TestCase):
         self.assertAlmostEqual(actualScoreDistribution['0'], score['0'], places=5)
         self.assertAlmostEqual(actualScoreDistribution['1'], score['1'], places=5)
     
-    def test_ScorePositiveExampleRepeats(self):
+    # def test_ScorePositiveExampleRepeats(self):
         #Tests the Probability Distribution of each class for a positive example
         sa = tc_model.TextClassify()
         examples = tc_model.generate_tuples_from_file(self.trainingFilePath)
